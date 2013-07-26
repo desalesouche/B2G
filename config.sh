@@ -30,7 +30,7 @@ case `uname` in
 	exit -1
 esac
 
-GITREPO=${GITREPO:-"git://github.com/mozilla-b2g/b2g-manifest"}
+GITREPO=${GITREPO:-"https://github.com/hejiann/b2g-manifest"}
 BRANCH=${BRANCH:-v1-train}
 
 while [ $# -ge 1 ]; do
@@ -101,7 +101,7 @@ case "$1" in
 	repo_sync $1
 	;;
 
-"otoro"|"unagi"|"keon"|"inari"|"leo"|"hamachi"|"peak"|"helix")
+"otoro"|"unagi"|"keon"|"inari"|"leo"|"hamachi"|"peak"|"helix"|"huawei-u8860")
 	echo DEVICE=$1 >> .tmp-config &&
 	repo_sync $1
 	;;
@@ -147,6 +147,7 @@ case "$1" in
 	echo - leo
 	echo - hamachi
 	echo - helix
+    echo - huawei-u8860
 	echo - tara
 	echo - pandaboard
 	echo - emulator
