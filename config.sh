@@ -101,7 +101,7 @@ case "$1" in
 	repo_sync $1
 	;;
 
-"otoro"|"unagi"|"keon"|"inari"|"leo"|"hamachi"|"peak"|"helix"|"huawei-u8860")
+"otoro"|"unagi"|"keon"|"inari"|"leo"|"hamachi"|"peak"|"helix"|"u8860")
 	echo DEVICE=$1 >> .tmp-config &&
 	repo_sync $1
 	;;
@@ -147,7 +147,7 @@ case "$1" in
 	echo - leo
 	echo - hamachi
 	echo - helix
-    echo - huawei-u8860
+    echo - u8860
 	echo - tara
 	echo - pandaboard
 	echo - emulator
